@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KevyFlow Africa 🌍</title>
+  <style>
+    body {
+      margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333;
+    }
+    header {
+      background: #000; color: white; padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-size: 1.6rem; font-weight: bold; animation: glow 2s infinite alternate; }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #fff; }
+      to { text-shadow: 0 0 15px #ffd700; }
+    }
+    .burger { font-size: 1.5rem; cursor: pointer; display: none; }
+    nav {
+      display: flex; gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none; color: white; transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: #111; padding: 1rem;
+    }
+
+    section {
+      padding: 4rem 2rem; text-align: center; animation: fadein 1s ease-in;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      padding: 1rem 2rem; margin: 1rem;
+      background: #000; color: white; border: none;
+      font-weight: bold; cursor: pointer; border-radius: 10px;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05); background: #222;
+    }
+
+    footer {
+      background: #000; color: white; padding: 2rem 1rem;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .footer-icons {
+      margin: 1rem;
+    }
+    .footer-icons a {
+      margin: 0 10px;
+      color: white; font-size: 1.6rem; text-decoration: none;
+    }
+    .footer-nav {
+      display: flex; gap: 2rem; margin: 1rem 0;
+    }
+    .footer-nav a {
+      color: #ffd700; text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .burger { display: block; }
+      nav { display: none; }
+      .mobile-nav.active { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">KevyFlow Africa 🌍</div>
+    <div class="burger" onclick="toggleNav()">☰</div>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#etapes">Étapes</a>
+      <a href="#bot">Bot</a>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#apropos">À propos</a>
+    <a href="#etapes">Étapes</a>
+    <a href="#bot">Bot</a>
+  </div>
+
+  <section>
+    <h1>"Ce que je sais, tu le sauras<br>et ce que tu sauras tu l’utiliseras."</h1>
+    <p>Créé par Kevin Amon (@Kevy)</p>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos de KevyFlow Africa 🌍</h2>
+    <p>KevyFlow Africa est une communauté privée où tu découvres des secrets rares, des méthodes exclusives et des stratégies pour aller plus loin.</p>
+  </section>
+
+  <section id="etapes">
+    <h2>Comment intégrer la communauté ?</h2>
+    <p>🎟️ Prix : 2500F</p>
+    <p>1️⃣ Choisis ta méthode de paiement</p>
+    <p>2️⃣ Envoie une capture du paiement</p>
+    <p>3️⃣ Attends la validation</p>
+  </section>
+
+  <section id="bot">
+    <h2>Rejoins notre bot Telegram 🤖</h2>
+    <button class="btn" onclick="window.open('https://t.me/kevyflowafrica_bot', '_blank')">Accéder au bot</button>
+  </section>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/share/1GyYVkpWgR/" target="_blank">📘</a>
+      <a href="https://wa.me/qr/DLQCUHPIVBYLE1" target="_blank">🟢</a>
+    </div>
+    <div class="footer-nav">
+      <a href="#">Mention légale</a>
+      <a href="https://wa.me/2250501249906" target="_blank">Service client</a>
+    </div>
+    <p>©️ KevyFlow Africa 🌍 2025 – Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mobileNav').classList.toggle('active');
+    }
+  </script>
+</body>
+      </html>
