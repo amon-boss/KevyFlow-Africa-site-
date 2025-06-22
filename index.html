@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KevyFlow Africa 🌍</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- Tu peux ajouter ici une favicon ou des fonts Google si besoin -->
+</head>
+<body>
+  <!-- HEADER avec menu hamburger -->
+  <header>
+    <div>
+      <h1 class="site-title">KevyFlow Africa 🌍</h1>
+      <p class="slogan">Ce que je sais, tu le sauras et ce que tu sauras tu l'utiliseseras</p>
+    </div>
+    <div class="creator">Créé par Kevin Amon (@Kevy)</div>
+
+    <button class="hamburger" aria-label="Menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Menu déroulant caché sur mobile -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="#description" class="nav-link">Description</a></li>
+        <li><a href="#objectifs" class="nav-link">Objectifs</a></li>
+        <li><a href="#integrer" class="nav-link">Intégrer</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTIONS PRINCIPALES -->
+  <main class="container">
+
+    <section id="accueil" class="section visible">
+      <h2>Bienvenue sur KevyFlow Africa 🌍</h2>
+      <p>
+        Ce site est la vitrine officielle de notre canal Telegram privé.
+        Découvrez nos secrets, astuces, et comment rejoindre la communauté.
+      </p>
+      <!-- Bouton caché avec lien du bot Telegram -->
+      <button class="button" id="bot-link-button">Rejoindre le Bot Telegram</button>
+    </section>
+
+    <section id="description" class="section">
+      <h2>Description</h2>
+      <p>
+        KevyFlow Africa 🌍 est une plateforme réservée aux membres ayant accès exclusif
+        à des contenus précieux et des conseils uniques. Notre but est de partager
+        des connaissances rares et utiles dans une communauté sécurisée.
+      </p>
+    </section>
+
+    <section id="objectifs" class="section">
+      <h2>Objectifs</h2>
+      <ul>
+        <li>Fournir des astuces exclusives en temps réel</li>
+        <li>Créer un réseau de membres engagés</li>
+        <li>Permettre un accès sécurisé via paiement validé</li>
+      </ul>
+    </section>
+
+    <section id="integrer" class="section">
+      <h2>Comment intégrer KevyFlow Africa ?</h2>
+      <ol>
+        <li>Choisissez votre méthode de paiement dans le bot Telegram.</li>
+        <li>Effectuez le paiement au tarif unique de 2500F.</li>
+        <li>Envoyez une capture d'écran de votre paiement via le bot.</li>
+        <li>Une fois validé, rejoignez notre canal privé via le bouton dans le bot.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact & Support</h2>
+      <p>
+        Pour toute question, assistance ou informations supplémentaires, vous pouvez
+        nous contacter via WhatsApp ou Facebook grâce aux liens dans le pied de page.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <div class="footer-icons" aria-label="Réseaux sociaux">
+      <a href="https://www.facebook.com/share/1GyYVkpWgR/" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="assets/facebook.svg" alt="Facebook" width="28" height="28" />
+      </a>
+      <a href="https://wa.me/qr/DLQCUHPIVBYLE1" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <img src="assets/whatsapp.svg" alt="WhatsApp" width="28" height="28" />
+      </a>
+    </div>
+
+    <div class="footer-copy">©️ KevyFlow Africa 🌍.2025 Tout droit réservé.</div>
+
+    <div class="footer-button">
+      <button id="mention-legale-btn">Mention légale</button>
+      <button id="service-client-btn">Service client</button>
+    </div>
+  </footer>
+
+  <!-- Sections cachées pour Mention légale et Service client -->
+  <div id="modal-mention-legale" class="modal hidden">
+    <div class="modal-content">
+      <h3>Politique d'utilisation & règles du groupe</h3>
+      <p>
+        Ici tu mets ta politique d'utilisation, règles de comportement dans le canal,
+        confidentialité, etc.
+      </p>
+      <button class="close-modal">Fermer</button>
+    </div>
+  </div>
+
+  <div id="modal-service-client" class="modal hidden">
+    <div class="modal-content">
+      <h3>Service Client</h3>
+      <p>
+        Pour contacter notre service client, cliquez sur ce lien WhatsApp :
+        <a href="https://wa.me/2250501249906" target="_blank" rel="noopener">Contacter via WhatsApp</a>
+      </p>
+      <button class="close-modal">Fermer</button>
+    </div>
+  </div>
+
+</body>
+</html>
