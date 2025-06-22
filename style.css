@@ -226,5 +226,14 @@ footer p {
 
   #menu-toggle:checked ~ nav ul {
     display: flex;
-  }
+  /* ANIMATIONS AU SCROLL */
+.invisible {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
